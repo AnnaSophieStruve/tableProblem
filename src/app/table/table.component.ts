@@ -43,6 +43,10 @@ const NAMES: string[] = [
   'Elizabeth',
 ];
 
+const VORNAME: string[] = [
+
+];
+
 /**
  * @title Data table with sorting, pagination, and filtering.
  */
@@ -52,7 +56,7 @@ const NAMES: string[] = [
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent implements AfterViewInit {
-  displayedColumns: string[] = ['id', 'name', 'progress', 'fruit'];
+  displayedColumns: string[] = ['id', 'vorname', 'name', 'progress', 'fruit'];
   dataSource: MatTableDataSource<UserData>;
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
