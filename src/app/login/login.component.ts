@@ -44,7 +44,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     ).subscribe({
       next: _ => {
         this.loginValid = true;
-        console.log('Hello I am here  in the code');
+        console.log('Hello I am here');
         this.router.navigate(['table']);
       },
       error: _ => this.loginValid = false
